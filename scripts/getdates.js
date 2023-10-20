@@ -1,17 +1,33 @@
-// Get the current year
-const currentYear = new Date().getFullYear();
+const options = {year: 'numeric'}
 
-// Get the element with the id "copyright-year"
-const yearElement = document.querySelector("#datetime");
+document.querySelector('#year').textContent = new Date().toLocaleDateString('pt-BR', options);
 
-// Insert the current year into the yearElement
-yearElement.innerHTML = currentYear;
+ 
 
-// Get the date and time the document was last modified
-const lastModified = document.lastModified;
+const oLastModif = new Date(document.lastModified);
 
-// Get the element with the id "lastModified"
-const modifiedElement = document.querySelector("#lastModified");
+document.querySelector('#lastModified').textContent = oLastModif;
 
-// Insert the last modified date into the modifiedElement
-modifiedElement.innerHTML = lastModified;
+ 
+
+const currentPageURL = window.location.href;
+
+ 
+
+const navLinks = document.querySelectorAll('nav a');
+
+ 
+
+for(var i=0; i< navLinks.length; i++) 
+
+{
+
+    if(navLinks[i].href === currentPageURL)
+
+    {
+
+        navLinks[i].classList.add('active');
+
+    }
+
+}

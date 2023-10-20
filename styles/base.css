@@ -1,91 +1,82 @@
 
 
-
+/* Define my color scheme and font */
 body{
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0; /* Background color for the whole page */
+    color: #333; /* Text color */
+    font-family: 'Roboto', sans-serif; /* My chosen font*/
+    margin: 0;
 }
 
-.header{
+header{
+background-color: #1D4D72;
+color: #fff;
+text-align: center;
+padding: 20px;
 margin-top: 20px;
-display: flex;
-flex-direction: column;
-color: white;
-align-items: center;
-background-color: #1D4D72;
-justify-content: center;
 }
 
-.footer{
-margin-bottom: 20px;
-display: flex;
-flex-direction: column;
-color: white;
-align-items: center;
-background-color: #1D4D72;
-justify-content: center;
-}
-
-
-nav{
-    height: auto;
-    width: 100%;
-    background-color:#000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-nav ul{
-    list-style: none;
-    text-decoration: none;
-    font-size: 24px;
-}
-nav li{
-    margin: 20px;
-}
-nav ul a{
-    color: white;
-    text-decoration: none;
-}
 .logo{
-    /* width: 600px; */
-    display: flex;
+    border-radius: 50%;
+    display: flex; 
     gap: 25px;
-  padding: 20px;
+    justify-content:center;
 }
 
-main{
-    max-width: 500px;
-    margin:  auto;
+nav {
+    background-color:#110f0f;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 
-main ol{
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    line-height: 2.0;
+    
+}
+
+nav li a{
+    margin: 20px;
+    list-style-type: none; /* Remove bullets from the list */
+    color: #fff;
     text-decoration: none;
-    font-size: 20px;
 }
 
-main ol a{
-    color: rgb(43, 43, 208);
-    text-decoration: none;
+main {
+    width: 80%; /* Limited width for the main content */
+    margin:  0 auto; /* Center the main content horizontally */
+    padding: 20px;
+}
+
+main ul{
     list-style-type: none;
 }
-.card{
+
+.card {
     display: grid;
-    border: 2px solid gray;
-    border-radius: 5px;
-    margin: 10px;
-   
+    border: 1px solid #ddd;
+    margin: 20px 0;
 }
-.card-header{
+
+h3 {
 margin: 0px;
-border-radius: 2px 2px 0px 0px;
 padding: 10px;
 color: white;
 text-align: center;
-background-color: #1D4D72;
+background-color: #1D4D72;;
 }
 
-p{
+p {
 text-align: center;
 }
+
+footer {
+    background-color: #1D4D72;;
+    color:#fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    }
