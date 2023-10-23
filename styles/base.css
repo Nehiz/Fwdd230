@@ -3,13 +3,13 @@
 /* Define my color scheme and font */
 body{
     background-color: #f0f0f0; /* Background color for the whole page */
-    color: #333; /* Text color */
+    color: #000000; /* Text color */
     font-family: 'Roboto', sans-serif; /* My chosen font*/
     margin: 0;
 }
 
 header{
-background-color: #1D4D72;
+background-color: #000080;
 color: #fff;
 text-align: center;
 padding: 20px;
@@ -24,7 +24,7 @@ margin-top: 20px;
 }
 
 nav {
-    background-color:#110f0f;
+    background-color:#000000;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -57,16 +57,16 @@ main ul{
 
 .card {
     display: grid;
-    border: 1px solid #ddd;
+    border: 1px solid #C0C0C0;
     margin: 20px 0;
 }
 
 h3 {
-margin: 0px;
-padding: 10px;
-color: white;
-text-align: center;
-background-color: #1D4D72;;
+    background-color: #000080;
+    color: white;
+    margin: 0px;
+    padding: 10px;    
+    text-align: center;
 }
 
 p {
@@ -74,7 +74,7 @@ text-align: center;
 }
 
 footer {
-    background-color: #1D4D72;;
+    background-color: #000080;
     color:#fff;
     padding: 10px;
     text-align: center;
