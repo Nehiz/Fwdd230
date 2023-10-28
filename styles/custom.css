@@ -1,0 +1,37 @@
+/* Custom CSS Reset/Normalization */
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Remove underlines from links */
+a {
+    text-decoration: none;
+}
+
+/* Set a base font size */
+html {
+    font-size: 16px;
+}
+
+nav {
+    background-color: #000000;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    color: #fff; /* define the color of the nav links*/
+}
+
+/* Define a basic text color and font family */
+body {
+    color: #000000; /* Text color */
+    font-family: Arial, Helvetica, sans-serif; /* Chosen font*/
+}
