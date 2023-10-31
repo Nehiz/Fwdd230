@@ -13,9 +13,9 @@
         display: flex; /* Enable Flexbox */
         justify-content: space-evenly;
         align-items: center;
-        gap: 11vw;
+        gap: 1vw;
     }
-    
+
 
     /* Widen the main content area for larger screens */
     main {
