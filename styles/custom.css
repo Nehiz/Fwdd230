@@ -36,3 +36,7 @@ body {
     color: #000000; /* Text color */
     font-family: Arial, Helvetica, sans-serif; /* Chosen font*/
 }
+main{
+    background-color: white;
+}
+
