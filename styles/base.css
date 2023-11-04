@@ -137,9 +137,6 @@ footer {
         font-weight: 700;
     }
 
-    .active::before {
-        
-    }
     
     .Map{
         grid-column: span 1;

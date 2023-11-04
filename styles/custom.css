@@ -40,3 +40,6 @@ main{
     background-color: white;
 }
 
+#learning-activities li a:hover{
+    color:red;
+}
