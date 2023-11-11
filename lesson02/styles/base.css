@@ -11,23 +11,26 @@ body {
     grid-template-rows: 100px 1fr 50px;
     grid-gap: 20px;
     padding: 20px;
+    /* Font, text color and background color styling*/
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* A readable font stack */
+    color: #333; /* A dark text color*/
+    background-color: #fff; /* A light background color*/
 }
 
 .header {
     grid-column: span 3;
-    background-color: rgb(26, 26, 96);
+    background-color: #0070cc;
     color: #fff;
     text-align: center;
     padding: 10px;
     height: fit-content;
+    width: 100%;
 
 }
 
 header h3 {
     padding: 10px;
-    
 }
 
 main {
@@ -35,6 +38,25 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+}
+
+/* Link Styling*/
+a {
+    color: #0070cc;
+    text-decoration: none; /* Remove underlines by default*/
+}
+
+a:hover {
+    color:#ff5a00; /*Hover color orange*/
+    text-decoration: underline; /* Underline on hover*/
+}
+
+a:active{
+    color:#ff0000; /* Active color red*/
+}
+
+a:visited {
+    color: #660099; /* Visited link color purple*/
 }
 
 .card-one, .card-two, .card-three {
@@ -47,19 +69,19 @@ main {
 
 
 :where(.card-one, .card-two, .card-three ) :is(h3) {
-    background-color: rgb(10, 10, 54);
+    background-color:#0070cc;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    color: white;
+    color: #fff;
     padding: 10px;
     height: 60px;
 }
 
-:where(.card-one, .card-two, .card-three ) :is(a,p){
+:where(.card-one, .card-two, .card-three ) :is(a,p) {
     padding: 10px;
 }
 
-:where(.card-one, .card-two, .card-three ) :is(img){
+:where(.card-one, .card-two, .card-three ) :is(img) {
     padding: 10px;
     width: 100%;
     height: 50%;
@@ -67,25 +89,25 @@ main {
 
 .footer {
     grid-column: span 3;
-    background-color: rgb(21, 21, 61);
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
-    height: fit-content;
 }
 
 
-@media screen and (max-width:768px){
-    body{
+@media screen and (max-width:768px) {
+    body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 100px 1fr 1fr 50px;
     }
 
-    .header{
+    .header {
         grid-column: span 2;
     }
-    main{
+
+    main {
         grid-column: span 2;
         grid-row: span 2;
         display: grid;
@@ -93,7 +115,7 @@ main {
         grid-template-rows: 1fr 1fr;
     }
 
-    .card-three{
+    .card-three {
         grid-column: span 2;
     }
 
@@ -101,25 +123,29 @@ main {
 
 
 @media screen and (max-width:670px){
-    body{
+    body {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 200px 1fr 1fr 1fr 100px;
-   
     }
-    .header{
+
+    .header {
         margin: auto;
     }
 
-    main{
+    main {
         grid-row: span 3;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        
     }
-    .card-one,.card-two,.card-three{
+
+    .card-one,.card-two,.card-three {
         grid-column: span 1;
+    }
+
+    .footer{
+        justify-content: center;
     }
 
 
